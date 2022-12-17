@@ -1,13 +1,19 @@
-var add = function (n1, n2, showResult, phrase) {
-    var result = n1 + n2;
-    if (showResult) {
-        console.log(phrase + result);
-    }
-    else
-        return result;
+// const person: {
+//   name: string;
+//   age: number;
+// } = {
+var person = {
+    name: "Rafał",
+    age: 38,
+    hobbies: ["cocking", "earning", "spending"],
+    role: [2, "student"]
 };
-var numb1 = 5;
-var numb2 = 2.8;
-var printResult = true;
-var resultPhrase = "Result is:";
-var result = add(numb1, numb2, printResult, resultPhrase);
+person.role.push("oh");
+var favoritActivity;
+favoritActivity = ["cocking"];
+console.log(person.name);
+console.log(person.role);
+for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
+    var hobby = _a[_i];
+    console.log(hobby);
+}
